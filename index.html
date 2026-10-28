@@ -116,6 +116,65 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #ff75
  *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
 }
 
+
+/* MILX visible redesign pass — stronger hierarchy and contrast */
+:root{--orange:#ff5a1f;--site-primary:#ff5a1f;--site-background:#0a0a0c;--ink:#f5f3ef;--muted:#b8b5b1;--line:#343438;--paper:#f0ebe3}
+body,.root{background:#0a0a0c!important;color:#f5f3ef!important}
+.topline{background:#ff5a1f!important;color:#101012!important;padding:10px 5vw}
+.nav{background:#0a0a0c!important;border-bottom:1px solid #343438!important}
+.logo{font-size:32px;letter-spacing:.07em}
+.logo-mark{background:#ff5a1f!important}
+.navlinks a{color:#f5f3ef;opacity:.92}
+.navlinks a:hover{color:#ff7545!important}
+.nav-cta,.btn{background:#ff5a1f!important;border-color:#ff5a1f!important;color:#111!important;font-weight:900;box-shadow:none;border-radius:2px}
+.nav-cta:hover,.btn:hover{background:#ff7545!important;border-color:#ff7545!important;transform:translateY(-2px)}
+.btn.outline{background:transparent!important;color:#f5f3ef!important;border-color:#68686d!important}
+.btn.outline:hover{border-color:#ff5a1f!important;color:#ff7545!important}
+.hero{min-height:0!important;grid-template-columns:1fr!important;background:#0a0a0c!important}
+.hero-copy{padding:clamp(56px,9vw,112px) 8vw 64px!important;max-width:1200px}
+.hero h1{font-size:clamp(76px,14vw,176px)!important;line-height:.79!important;letter-spacing:-.065em!important;max-width:1050px;margin:28px 0 30px!important}
+.hero h1 span{color:#ff5a1f!important}
+.hero-copy p{max-width:560px!important;color:#d0ceca!important;font-size:16px!important;line-height:1.75!important}
+.hero-art{display:none!important}
+.hero-meta{max-width:600px!important;border-top:1px solid #414146!important}
+.hero-meta strong{font-size:30px!important;color:#fff}
+.hero-meta small{color:#b8b5b1!important}
+.eyebrow,.station-no{color:#ff7545!important}
+.eyebrow:before{background:#ff5a1f!important}
+.ticker{background:#141417!important;border-color:#343438!important;color:#f5f3ef!important}
+.section{padding:clamp(68px,9vw,116px) 8vw!important;background:#0a0a0c!important}
+.section-head{margin-bottom:46px!important}
+.section-head h2,.split-copy h2,.event-card h3,.event-copy h2,.product-copy h2,.community h2{letter-spacing:-.055em!important}
+.section-head h2 span,.event-copy h2 span{color:#ff5a1f!important}
+.section-head p,.station p,.event-copy p{color:#c5c2be!important}
+.method{border-color:#38383d!important;background:#111114}
+.station{background:#111114;border-color:#38383d!important;padding:28px 24px!important}
+.station:hover{background:#ff5a1f10!important}
+.station h3{color:#f5f3ef!important}
+.station-icon{color:#ff5a1f!important}
+.split{background:#f0ebe3!important;color:#111!important}
+.split-art{background:#ff5a1f!important}
+.split-copy .eyebrow{color:#b83d0c!important}
+.split-copy .eyebrow:before{background:#b83d0c!important}
+.split-copy p{color:#45413d!important}
+.split-copy .btn.outline{color:#111!important;border-color:#77716b!important}
+.event-card{background:#141417!important;border-color:#39393e!important}
+.event-card-top{color:#ff7545!important}
+.event-stats strong{color:#f5f3ef!important}
+.product,.community{background:#0e0e11!important}
+footer{border-color:#343438!important}
+@media(max-width:850px){
+ .hero-copy{padding:58px 7vw 46px!important}
+ .section{padding:68px 7vw!important}
+ .section-head{flex-direction:column;align-items:flex-start!important}
+}
+@media(max-width:560px){
+ .hero h1{font-size:clamp(64px,17vw,100px)!important}
+ .hero-copy p{font-size:15px!important}
+ .hero-actions .btn{width:100%}
+ .section{padding:58px 6vw!important}
+}
+
 </style>
 <style>
 /* MILX competition rulebook */
